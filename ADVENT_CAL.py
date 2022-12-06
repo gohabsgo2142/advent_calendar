@@ -10,6 +10,7 @@ Puzzle date : 2022-12-01
 import argparse
 from december.Day_1 import day_1 as d1
 from december.Day_2 import day_2 as d2
+from december.Day_3 import day_3 as d3
 
 
 def get_args() -> argparse.Namespace:
@@ -28,3 +29,7 @@ if get_args().dates == 1:
 if get_args().dates == 2:
     d2.rock_paper_scissors()
     d2.indication_rounds()
+
+if get_args().dates == 3:
+    d3.read_document()
+    d3.compare_lines()
