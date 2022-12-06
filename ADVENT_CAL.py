@@ -11,6 +11,9 @@ import argparse
 from december.Day_1 import day_1 as d1
 from december.Day_2 import day_2 as d2
 from december.Day_3 import day_3 as d3
+from december.Day_4 import day_4 as d4
+from december.Day_5 import day_5 as d5
+from december.Day_6 import day_6 as d6
 
 
 def get_args() -> argparse.Namespace:
@@ -33,3 +36,14 @@ if get_args().dates == 2:
 if get_args().dates == 3:
     d3.read_document()
     d3.compare_lines()
+
+# if get_args().dates == 4:
+#     d4.
+#     d4.
+
+# if get_args().dates == 5:
+#     d5.
+#     d5.
+
+if get_args().dates == 6:
+    d6.reading_lines()

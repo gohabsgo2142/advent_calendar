@@ -11,7 +11,7 @@ import itertools
 import os
 import sys
 
-path = f"{os.path.join(sys.path[0], 'input.txt')}"
+path = f"{os.path.join(sys.path[0], 'december/Day_3/input.txt')}"
 
 
 def read_document():
@@ -28,7 +28,7 @@ def read_document():
                 s_half = sentence[n // 2 + 1:]
             for x in find_duplicate(f_half, s_half):
                 count = get_letter_number(x) + count
-    return count
+    print(count)
 
 
 def compare_lines():
@@ -42,7 +42,7 @@ def compare_lines():
             same_inter = list(x.intersection(y, z))[0]
             count = get_letter_number(same_inter) + count
 
-    return count
+    print(count)
 
 
 def get_letter_number(letter):
